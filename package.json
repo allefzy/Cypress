@@ -1,0 +1,15 @@
+{
+  "name": "projeto_01",
+  "version": "1.0.0",
+  "description": "First Project with Cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "author": "Eduardo Allefy",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^9.7.0",
+    "mochawesome": "^7.1.3"
+  }
+}

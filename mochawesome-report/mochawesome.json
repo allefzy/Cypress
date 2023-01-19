@@ -1,0 +1,157 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-05-24T03:06:11.611Z",
+    "end": "2022-05-24T03:06:23.293Z",
+    "duration": 11682,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "0618d367-5620-46d9-9f98-1649e98e24a0",
+      "title": "",
+      "fullFile": "cypress/integration/3-AluraPic/alurapic.spec.js",
+      "file": "cypress/integration/3-AluraPic/alurapic.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b56c49d6-e170-4914-8e92-25d3dbb1bb89",
+          "title": "Login e registro de usuarios alura pic",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "verefica mensagens validação",
+              "fullTitle": "Login e registro de usuarios alura pic verefica mensagens validação",
+              "timedOut": null,
+              "duration": 4516,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('a', 'Register now').click();\ncy.contains('button', 'Register').click();\ncy.contains('ap-vmessage', 'Email is required!').should('be.visible');\ncy.contains('button', 'Register').click();\ncy.contains('ap-vmessage', 'Password is required!').should('be.visible');\ncy.contains('ap-vmessage', 'Full name is required!').should('be.visible');\ncy.contains('ap-vmessage', 'User name is required!').should('be.visible');",
+              "err": {},
+              "uuid": "9794f075-e366-4ca6-8d33-a6b674dcbdd5",
+              "parentUUID": "b56c49d6-e170-4914-8e92-25d3dbb1bb89",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "verefica mensagens de Email invalido",
+              "fullTitle": "Login e registro de usuarios alura pic verefica mensagens de Email invalido",
+              "timedOut": null,
+              "duration": 1574,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('a', 'Register now').click();\ncy.contains('button', 'Register').click();\ncy.get('input[formcontrolname=\"email\"]').type('jacquilne');\ncy.contains('ap-vmessage', 'Invalid e-mail').should('be.visible');",
+              "err": {},
+              "uuid": "97ba79b8-8cdc-4615-a8df-6b627e0af494",
+              "parentUUID": "b56c49d6-e170-4914-8e92-25d3dbb1bb89",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "verefica mensagens de Password",
+              "fullTitle": "Login e registro de usuarios alura pic verefica mensagens de Password",
+              "timedOut": null,
+              "duration": 1343,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('a', 'Register now').click();\ncy.contains('button', 'Register').click();\ncy.get('input[formcontrolname=\"password\"]').type('123');\ncy.contains('button', 'Register').click();\ncy.contains('ap-vmessage', 'Mininum length is 8').should('be.visible');",
+              "err": {},
+              "uuid": "7bfdb3ff-9ef0-4746-810b-b99888590f3e",
+              "parentUUID": "b56c49d6-e170-4914-8e92-25d3dbb1bb89",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "verefica mensagens de Username",
+              "fullTitle": "Login e registro de usuarios alura pic verefica mensagens de Username",
+              "timedOut": null,
+              "duration": 1624,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('a', 'Register now').click();\ncy.contains('button', 'Register').click();\ncy.get('input[formcontrolname=\"userName\"]').type('Allefzy');\ncy.contains('button', 'Register').click();\ncy.contains('ap-vmessage', 'Must be lower case').should('be.visible');",
+              "err": {},
+              "uuid": "23adc774-768c-4b97-bd50-2c8f8b985831",
+              "parentUUID": "b56c49d6-e170-4914-8e92-25d3dbb1bb89",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9794f075-e366-4ca6-8d33-a6b674dcbdd5",
+            "97ba79b8-8cdc-4615-a8df-6b627e0af494",
+            "7bfdb3ff-9ef0-4746-810b-b99888590f3e",
+            "23adc774-768c-4b97-bd50-2c8f8b985831"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9057,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
